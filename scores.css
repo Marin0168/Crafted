@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+.namen {
+    display: flex;
+    gap: 500px;
+    margin: 20px;
+}
+
+#timer {
+    font-size: 2em;
+}
+#message {
+    font-size: 2em;
+    color: red;
+    display: none;
+}
