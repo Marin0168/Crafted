@@ -1,18 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Aptos&display=swap');
+
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Aptos', sans-serif;
+    font-weight:bold;
 }
 
 .namen {
     display: flex;
-    gap: 500px;
-    margin: 20px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 80%;
+    height: 80vh;
+    padding-top: 7%;
+}
+
+.box {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-basis: 300px;
+
+    text-align: center;
+}
+
+.box:nth-child(1) {
+    background: linear-gradient(to bottom, rgb(222,252,234), rgb(97,253,172));
+    border: 2px solid rgb(99,246,172);
+}
+
+.box:nth-child(2) {
+    background: linear-gradient(to bottom, rgb(221,250,255), rgb(139,243,255));
+    border: 2px solid rgb(60,213,239);
+}
+
+.box:nth-child(3) {
+    background: linear-gradient(to bottom, rgb(254,231,247), rgb(255,177,231));
+    border: 2px solid rgb(241,151,215);
 }
 
 #timer {
-    font-size: 2em;
+    font-size: 4em;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
 }
+
 #message {
     font-size: 2em;
     color: red;
     display: none;
 }
+
+.image-container,
+.text-container {
+    flex: 1 0 auto;
+}
+
+.text-container h1 {
+    font-size: 3em;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-container h3 {
+    line-height: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*#controlButton {
+    font-size: 2em;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}*/
