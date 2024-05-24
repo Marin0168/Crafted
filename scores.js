@@ -1,11 +1,11 @@
-let timeRemaining = 240; // 4 minutes in seconds
+let timeRemaining = 180;
 let timerInterval = null;
 let isRunning = false;
 
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    return `${minutes.toString().padStart(2)}:${secs.toString().padStart(2, '0')}`;
 }
 
 function updateDisplay() {
@@ -29,8 +29,7 @@ function countdown() {
         updateDisplay();
     } else {
         clearInterval(timerInterval);
-        document.getElementById('timer').style.display = 'none';
-        document.getElementById('message').style.display = 'block';
+        document.getElementById('timer').textContent = "Time's up!";
         document.getElementById('controlButton').style.display = 'none';
     }
 }
