@@ -37,17 +37,17 @@ body {
     text-align: center;
 }
 
-.box:nth-child(1) {
+/* .box:nth-child(1) {
     background: linear-gradient(to bottom, rgb(222,252,234), rgb(97,253,172));
     border: 2px solid rgb(99,246,172);
-}
+} */
 
-.box:nth-child(2) {
+.box:nth-child(1) {
     background: linear-gradient(to bottom, rgb(221,250,255), rgb(139,243,255));
     border: 2px solid rgb(60,213,239);
 }
 
-.box:nth-child(3) {
+.box:nth-child(2) {
     background: linear-gradient(to bottom, rgb(254,231,247), rgb(255,177,231));
     border: 2px solid rgb(241,151,215);
 }
